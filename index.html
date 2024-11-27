@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Quicklist</title>
+</head>
+
+<body>
+    <header class="logo">
+        <img src="./icons/logo.png" alt="LogoQuicklist">
+    </header>
+    <main>
+        <a href="#" class="back"><- Voltar</a>
+                <h1>Compras da semana</h1>
+
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Adicione um novo item" name="item-input" id="item-input">
+                    <button>Adicionar item</button>
+                </div>
+
+                <div class="list" id="list">
+                    <div class="items">
+                        <div class="check-wrapper">
+                            <input type="checkbox" name="item1" id="item1">
+                            <label for="item1">Pão de forma</label>
+                        </div>
+                        <button><img src="./icons/trash.svg" alt="lixeira"></button>
+                    </div>
+
+                    <div class="items">
+                        <div class="check-wrapper">
+                            <input type="checkbox" name="item2" id="item2">
+                            <label for="item2">Pão de forma</label>
+                        </div>
+                        <button><img src="./icons/trash.svg" alt="lixeira"></button>
+                    </div>
+                </div>
+
+                <div class="alert">
+                    <div class="alert-wrapper">
+                        <img src="./icons/alert.svg" alt="aviso">
+                        <p>O item foi removido da lista</p>
+                    </div>
+                    <button><img src="./icons/close.svg" alt="fechar"></button>
+                </div>
+    </main>
+</body>
+
+</html>
