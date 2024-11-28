@@ -101,6 +101,7 @@ h1 {
     border-radius: .75rem;
     height: 49px;
     margin-bottom: .75rem;
+    transition: all 0.3s ease;
 
     .custom-checkbox .checkbox-label {
 
@@ -144,6 +145,7 @@ h1 {
     border-radius: .75rem;
     font: var(--font-label);
     margin-top: 2.25rem;
+    transition: all 0.3s ease;
 
     .alert-wrapper {
         display: flex;
@@ -164,4 +166,8 @@ h1 {
             height: .75rem;
         }
     }
+}
+
+.hidden {
+    display: none;
 }

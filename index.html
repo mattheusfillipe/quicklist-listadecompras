@@ -24,35 +24,22 @@
 
                 <div class="input-wrapper">
                     <input type="text" placeholder="Adicione um novo item" name="item-input" id="item-input">
-                    <button>Adicionar item</button>
+                    <button id="add-item">Adicionar item</button>
                 </div>
 
                 <div class="list" id="list">
-                    <div class="items">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" id="myCheckbox">
-                            <span class="checkbox-label">Pão de forma</span>
-                          </label>
-                        <button id="delete"><img src="./icons/trash.svg" alt="lixeira"></button>
-                    </div>
-
-                    <div class="items">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" id="myCheckbox">
-                            <span class="checkbox-label">Pão de batata</span>
-                          </label>
-                        <button id="delete"><img src="./icons/trash.svg" alt="lixeira"></button>
-                    </div>
+                    
                 </div>
 
-                <div class="alert">
+                <div class="alert hidden">
                     <div class="alert-wrapper">
                         <img src="./icons/alert.svg" alt="aviso">
                         <p>O item foi removido da lista</p>
                     </div>
-                    <button><img src="./icons/close.svg" alt="fechar"></button>
+                    <button id="close"><img src="./icons/close.svg" alt="fechar"></button>
                 </div>
     </main>
+    <script src="./index.js"></script>
 </body>
 
 </html>
