@@ -8,6 +8,7 @@ let idCounter = 0
 
 
 function addItem() {
+    
     const inputValue = userItem.value;
 
     if (inputValue.trim() !== '') {
@@ -38,15 +39,19 @@ function addItem() {
         })
 
         buyList.appendChild(newItem)
+
         userItem.value = ''
     } else {
         alert('Por favor, adicione um item')
     }
 }
 
-btnAdd.addEventListener("click", addItem);
-document.addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') { 
+btnAdd.addEventListener("click", () => {
+    addItem()
+    userItem.focus() // Focus on input field when new item is added
+})
+document.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
         addItem()
     }
 })
