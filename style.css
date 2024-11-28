@@ -60,7 +60,7 @@ h1 {
         border: 2px solid var(--border-primary);
         background-color: var(--bg-secondary);
         border-radius: .75rem;
-        height: 44px;
+        min-height: 44px;
 
         placeholder {
             color: var(--content-tertiary);
@@ -85,6 +85,7 @@ h1 {
         color: var(--always-white);
         border-radius: .75rem;
         cursor: pointer;
+        min-height: 44px;
     }
 
     button:hover {
@@ -171,3 +172,17 @@ h1 {
 .hidden {
     display: none;
 }
+
+@media (max-width: 600px) {
+    body {
+        padding: 1.75rem;
+    }
+
+    .input-wrapper {
+      flex-direction: column;
+
+      button {
+        text-align: center;
+      }
+    }
+  }
